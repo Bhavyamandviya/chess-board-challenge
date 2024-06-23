@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  /* padding: 10px 20px; */
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #c9af7e;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 3px solid #5b3c1d;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+/* #btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+} */
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #5b3c1d;
+  border: 1px solid #5b3c1d;
+  text-shadow: 0 0 5px #c9af7e, 0 0 10px #c9af7e, 0 0 20px #c9af7e;
+  box-shadow: 0 0 5px #5b3c1d, 0 0 20px #5b3c1d, 0 0 50px #5b3c1d,
+    0 0 100px #5b3c1d;
+}
+
+.controls {
+  margin-top: 1rem;
+}
+
+.controls button {
+  margin-right: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.controls button:disabled {
+  cursor: not-allowed;
+  /* opacity: 0.5; */
+}
+
+.chessboard {
+  border: 1.7rem solid #493723;
+  min-width: 40%;
+  margin-bottom: 10px;
+}
+.chessbox {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+/* @media screen and (width <= 1199px) {
+  .chessboard {
+    min-width: 900px;
+  }
+  .chessbox {
+    font-size: 1.5rem;
+  }
+  .controls button {
+    margin-top: 1.3rem;
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+  }
+} */
+/* @media screen and (width <= 1499px) {
+  .chessboard {
+    min-width: 900px;
+  }
+  .chessbox {
+    font-size: 1.5rem;
+  }
+  .controls button {
+    margin-top: 1.3rem;
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+  }
+} */
+@media screen and (width <= 991px) {
+  .chessboard {
+    min-width: 80%;
+  }
+}
+@media screen and (width <= 575px) {
+  .chessboard {
+    border-width: 0.8rem;
+  }
+  .chessbox {
+    font-size: 0.5rem;
+  }
+}
